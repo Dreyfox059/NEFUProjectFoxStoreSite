@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<link rel="shortcut icon" href="img/icon.png" type="image/png">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PCFoxStore</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="sliders.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+	<link rel="stylesheet" href="fontawesome-free-6.0.0-beta3-web/css/all.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="ui-components-master/ChiefSlider/chief-slider.css">
+  	<script defer src="ui-components-master/ChiefSlider/chief-slider.js"></script>
+  	<script type="text/javascript" src="code.js"></script>
+</head>
+<body>
+	<header style="padding-bottom: 0px;">
+		<div class="header-top">
+			<ul class="header-top-menu">
+				<li class="header-top-item">
+					<div class="header-top-link-city">
+						<a href="#">
+							<i class="fas fa-map-marker-alt"></i>
+							<p>Якутск</p>
+						</a>
+					</div>
+				</li>
+				<li class="header-top-phone"><p>+7(XXX)XXX-XX-XX</p></li>
+				<li class="header-top-items">
+					<a href="#">Магазины</a>
+				</li>
+				<li class="header-top-items">
+					<a href="#">Конфигуратор</a>
+				</li>
+				<li class="header-top-items">
+					<div class="header-top-link-pers">
+						<a onclick="document.getElementById('id01').style.display='block'" href="#">
+							<i class="fa-solid fa-user"></i>
+							<p>Личный каб</p>
+						</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<nav id="mainheader" class="header-search">
+			<div class="header-logo">
+				<a class="logo" href="index.html"></a>
+			</div>
+			<div class="search">
+				<form class="input-form" action="#">
+					<input class="search-input" type="search" placeholder="Поиск по сайту">
+					<button title="Найти" class="search-button" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+				</form>
+			</div>
+			<div class="header-buttons">
+				<a href="#"><div class="head-button">
+					<span><i class="fa-solid fa-bookmark"></i>Избранное</span>
+				</div></a>
+				<a href="#"><div class="head-button">
+					<span><i class="fa-solid fa-chart-column"></i>Сравнение</span>
+				</div></a>
+				<a href="#"><div class="head-button">
+					<span><i class="fa-solid fa-cart-shopping"></i>Корзина</span>
+				</div></a>
+			</div>
+			<img src="img/Слой 3.png" alt="" class="sloy">
+		</nav>
+	</header>
+	<div id="id01" class="modal">
+	  <form class="modal-content" action="/action_page.php">
+	    <div class="container">
+	    	<div id="spec-top">
+	    		<div>
+	    			<h1>Зарегистрироваться</h1>
+	    			<p>Заполните чтобы создать аккаунт.</p>
+	    		</div>
+	   	      <span onclick="document.getElementById('id01').style.display='none'" class="closer" title="Closer Modal">&times;</span>
+
+	    	</div>
+	      <hr>
+	      <label for="email"><b>Email</b></label>
+	      <input type="text" placeholder="Enter Email" name="email" required>
+
+	      <label for="psw"><b>Пароль</b></label>
+	      <input type="password" placeholder="Enter Password" name="psw" required>
+
+	      <label for="psw-repeat"><b>Повторите пароль</b></label>
+	      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+	      
+	      <label>
+	        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Запомнить меня
+	      </label>
+
+	      <p>Создавая новый аккаунт вы соглашаетесь с нашей <a href="#" style="color:dodgerblue">Политика конфеденциальности</a>.</p>
+
+	      <div class="clearfix">
+	        <button type="submit" class="signupbtn">Зарегистрироваться</button>
+	      </div>
+	    </div>
+	  </form>
+	</div>
+	<div class="path">
+		<p>/<a href="index.html">Главная_страница</a></p>
+	</div>
+	<div class="main">
+		<div class="top-container">
+			<div class="side-bar">
+				<div id="b1" class="side-paths">
+					<i class="fa-solid fa-microchip"></i><span>Комплектующие <span class="red">ПК</span></span><img src="fontawesome-free-6.0.0-beta3-web/svgs/solid/angle-left.svg
+" alt="">
+				<div class="dropdown">
+					<div class="dropmenu">
+						<div>
+							<span>Комплектующие</span>
+							<ul>
+								<li><a href="#">Процессоры</a></li>
+								<li><a href="#">Материнские платы</a></li>
+								<li><a href="#">Видеокарты</a></li>
+								<li><a href="#">Блоки питания</a></li>
+								<li><a href="#">Корпуса</a></li>
+								<li><a href="#">Оперативная память</a></li>
+								<li><a href="#">Жесткие диски HDD</a></li>
+								<li><a href="#">Твердотельные накопители SSD</a></li>
+							</ul>
+						</div>
+						<div>
+							<span>Устройства расширения</span>
+							<ul>
+								<li><a href="#">Оптические приводы</a></li>
+								<li><a href="#">Звуковые карты</a></li>
+								<li><a href="#">Карты видеозахвата</a></li>
+								<li><a href="#">Контроллеры</a></li>
+								<li><a href="#">Адаптеры для накопителей</a></li>
+								<li><a href="#">Внешние оптические приводы</a></li>
+								<li><a href="#">Сетевые карты</a></li>
+								<li><a href="#">Внешние жесткие диски HDD</a></li>
+								<li><a href="#">Внешние накопители SSD</a></li>
+							</ul>
+						</div>
+						<div>
+							<span>Охлаждение компьютера</span>
+							<ul>
+								<li><a href="#">Кулеры дял процессоров</a></li>
+								<li><a href="#">Системы жидкостного охлаждения</a></li>
+								<li><a href="#">Вентиляторы для корпуса</a></li>
+								<li><a href="#">Термоинтерфейсы</a></li>
+								<li><a href="#">Аксессуары для систем охлаждения</a></li>
+								<li><a href="#">Компоненты для СЖО</a></li>
+								<li><a href="#">Термопрокладки</a></li>
+								<li><a href="#">Системы охлаждения чипсета</a></li>
+								<li><a href="#">Системы охлаждения ОЗУ</a></li>
+								<li><a href="#">Системы охлаждения HDD и SSD</a></li>
+								<li><a href="#">Термоклей</a></li>
+								<li><a href="#">Аксессуары для вентиляторов</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				</div>
+				<div id="b2" class="side-paths">
+					<i class="fa-solid fa-computer-mouse"></i><span>Периферийное <span class="red">оборудование</span></span><img src="fontawesome-free-6.0.0-beta3-web/svgs/solid/angle-left.svg
+" alt="">
+				<div class="dropdown">
+					<div class="dropmenu">
+						<div>
+							<span>Периферия</span>
+							<ul>
+								<li><a href="#">Мониторы</a></li>
+								<li><a href="#">Клавиатуры</a></li>
+								<li><a href="#">Мыши</a></li>
+								<li><a href="#">Наушники</a></li>
+								<li><a href="#">Коврики для мыши</a></li>
+								<li><a href="#">Графические планшеты</a></li>
+								<li><a href="#">Веб-камеры</a></li>
+								<li><a href="#">Кабели</a></li>
+							</ul>
+						</div>
+						<div>
+							<span>Устройства расширения</span>
+							<ul>
+								<li><a href="#">Оптические приводы</a></li>
+								<li><a href="#">Звуковые карты</a></li>
+								<li><a href="#">Карты видеозахвата</a></li>
+								<li><a href="#">Контроллеры</a></li>
+								<li><a href="#">Адаптеры для накопителей</a></li>
+								<li><a href="#">Внешние оптические приводы</a></li>
+								<li><a href="#">Сетевые карты</a></li>
+								<li><a href="#">Внешние жесткие диски HDD</a></li>
+								<li><a href="#">Внешние накопители SSD</a></li>
+							</ul>
+						</div>
+						<div>
+							<span>Охлаждение компьютера</span>
+							<ul>
+								<li><a href="#">Кулеры дял процессоров</a></li>
+								<li><a href="#">Системы жидкостного охлаждения</a></li>
+								<li><a href="#">Вентиляторы для корпуса</a></li>
+								<li><a href="#">Термоинтерфейсы</a></li>
+								<li><a href="#">Аксессуары для систем охлаждения</a></li>
+								<li><a href="#">Компоненты для СЖО</a></li>
+								<li><a href="#">Термопрокладки</a></li>
+								<li><a href="#">Системы охлаждения чипсета</a></li>
+								<li><a href="#">Системы охлаждения ОЗУ</a></li>
+								<li><a href="#">Системы охлаждения HDD и SSD</a></li>
+								<li><a href="#">Термоклей</a></li>
+								<li><a href="#">Аксессуары для вентиляторов</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				</div>
+				<div id="b3" class="side-paths">
+					<i class="fa-solid fa-headset"></i><span>Аудио<span class="red">техника</span></span><img src="fontawesome-free-6.0.0-beta3-web/svgs/solid/angle-left.svg
+" alt="">		<div class="dropdown">
+						<span>drop3</span>
+				</div>
+				</div>
+				<div id="b4" class="side-paths">
+					<i class="fa-solid fa-server"></i><span>Сетевое<br><span class="red">оборудование</span></span><img src="fontawesome-free-6.0.0-beta3-web/svgs/solid/angle-left.svg
+" alt="">
+				<div class="dropdown">
+						<span>drop4</span>
+				</div>
+				</div>
+				<div id="b5" class="side-paths">
+					<i class="fa-solid fa-house-user"></i><span>Офисная <span class="red">Мебель</span></span><img src="fontawesome-free-6.0.0-beta3-web/svgs/solid/angle-left.svg
+" alt="">
+				<div class="dropdown">
+						<span>drop5</span>
+				</div>
+				</div>
+				<div id="b6" class="side-paths">
+					<i class="fa-solid fa-print"></i><span><span class="red">Оргтехника и</span><br>Расходные Материалы</span><img src="fontawesome-free-6.0.0-beta3-web/svgs/solid/angle-left.svg
+" alt="">
+				<div class="dropdown">
+						<span>drop6</span>
+				</div>
+				</div>
+				<div id="b7" class="side-paths">
+					<i class="fa-brands fa-windows"></i><span><span class="red">Программное</span><br>обеспечение</span><img src="fontawesome-free-6.0.0-beta3-web/svgs/solid/angle-left.svg
+" alt="">
+				<div class="dropdown">
+						<span>drop7</span>
+				</div>
+				</div>
+				<div id="b8" class="side-paths">
+					<i class="fa-solid fa-laptop"></i><span><span class="red">Ноутбуки и</span><br>Компьютеры</span><img src="fontawesome-free-6.0.0-beta3-web/svgs/solid/angle-left.svg
+" alt="">
+				<div class="dropdown">
+						<span>drop8</span>
+				</div>
+				</div>
+				<div id="b9" class="side-paths">
+					<i class="fa-solid fa-gamepad"></i><span><span class="red">Игровые Консоли</span><br>и Аксессуары</span><img src="fontawesome-free-6.0.0-beta3-web/svgs/solid/angle-left.svg
+" alt="">
+				<div class="dropdown">
+						<span>drop9</span>
+				</div>
+				</div>
+				<div id="b10" class="side-paths">
+					<i class="fa-solid fa-mobile-screen-button"></i><span></i><span class="red">Смартфоны</span><br>и Планшеты</span><img src="fontawesome-free-6.0.0-beta3-web/svgs/solid/angle-left.svg
+" alt="">
+				<div class="dropdown">
+						<span>drop10</span>
+				</div>
+				</div>
+			</div>
+			<div class="news-slider">
+				<div class="contain">
+				    <div class="slider" data-slider="chiefslider">
+				      <div class="slider__container">
+				        <div class="slider__wrapper">
+				          <div class="slider__items">
+				            <div class="slider__item">
+				              <!-- Контент 1 слайда -->
+				            </div>
+				            <div class="slider__item">
+				              <!-- Контент 2 слайда -->
+				            </div>
+				            <div class="slider__item">
+				              <!-- Контент 3 слайда -->
+				            </div>
+				            <div class="slider__item">
+				              <!-- Контент 4 слайда -->
+				            </div>
+				            <div class="slider__item">
+				              <!-- Контент 5 слайда -->
+				            </div>
+				          </div>
+				        </div>
+				      </div>
+				      <a href="#" class="slider__control" data-slide="prev"><i class="fa-solid fa-angle-left"></i></a>
+				      <a href="#" class="slider__control" data-slide="next"><i class="fa-solid fa-angle-right"></i></a>
+				      <ol class="slider__indicators">
+				        <li data-slide-to="0"></li>
+				        <li data-slide-to="1"></li>
+				        <li data-slide-to="2"></li>
+				        <li data-slide-to="3"></li>
+				        <li data-slide-to="4"></li>
+				      </ol>
+				    </div>
+			  </div>
+			</div>
+			<div class="first-desc">
+				<span>Самое <span class="red">Популярное</span> в Этом Месяце</span>
+				<div class="desclines-top"></div>
+			</div>
+			<div class="top-slider">
+				<section>
+					<div class="swiper mySwiper container">
+						<div class="swiper-wrapper content">
+							<div class="swiper-slide card">
+								<div class="card-content">
+								<div class="image">
+									<img src="images/SSD.png" alt="">
+								</div>
+								<div class="cdesc">
+									<a href="#">SSD накопитель WD Blue SN550 WDS500G2B0C 500ГБ</a>
+								</div>
+								<div class="lower">
+									<div class="price">
+										<span></span>
+										<p>6500 ₽</p>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="fa-solid fa-chart-column"></i></a>
+										<a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+									</div>
+								</div>
+							</div>
+							</div>
+							<div class="swiper-slide card">
+								<div class="card-content">
+								<div class="image">
+									<img src="images/mouse.png" alt="">
+								</div>
+								<div class="cdesc">
+									<a href="#">Мышь A4TECH Bloody V8, проводная, USB, черный</a>
+								</div>
+								<div class="lower">
+									<div class="price">
+										<span></span>
+										<p>1599 ₽</p>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="fa-solid fa-chart-column"></i></a>
+										<a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+									</div>
+								</div>
+							</div>
+							</div>
+							<div class="swiper-slide card">
+								<div class="card-content">
+								<div class="image">
+									<img src="images/smartphone.png" alt="">
+								</div>
+								<div class="cdesc">
+									<a href="#">Смартфон Xiaomi Poco X3 Pro 8/256Gb, синий</a>
+								</div>
+								<div class="lower">
+									<div class="price">
+										<span></span>
+										<p>29 990 ₽</p>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="fa-solid fa-chart-column"></i></a>
+										<a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+									</div>
+								</div>
+							</div>
+							</div>
+							<div class="swiper-slide card">
+								<div class="card-content">
+									
+								</div>
+							</div>
+							<div class="swiper-slide card">
+								<div class="card-content">
+									
+								</div>
+							</div>
+							<div class="swiper-slide card">
+								<div class="card-content">
+									
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</section>
+			</div>
+		</div>
+		<img src="img/059.png" alt="" class="next-step">
+		<div class="second-desc">
+			<span>Товары со <span class="red">Скидкой</span></span>
+			<div class="desclines-main"></div>
+		</div>
+		<div class="stmain-slider">
+			<section>
+				<div class="swiper mySwiper2 container">
+					<div class="swiper-wrapper content">
+						<div class="swiper-slide card">
+							<div class="card-content">
+								<div class="image">
+									<img src="images/realme.png" alt="">
+								</div>
+								<div class="cdesc">
+									<a href="#">Смартфон REALME 9 Pro+ 5G 8/256Gb, RMX3393, черный</a>
+								</div>
+								<div class="lower">
+									<div class="price">
+										<span>45 990 ₽</span>
+										<p>34 990 ₽</p>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="fa-solid fa-chart-column"></i></a>
+										<a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide card">
+							<div class="card-content">
+								<div class="image">
+									<img src="images/noteacer.png" alt="">
+								</div>
+								<div class="cdesc">
+									<a href="#">Ноутбук Acer Nitro 5 AN517-41-R0FX, 17.3", черный</a>
+								</div>
+								<div class="lower">
+									<div class="price">
+										<span>258 390 ₽</span>
+										<p>218 590 ₽</p>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="fa-solid fa-chart-column"></i></a>
+										<a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide card">
+							<div class="card-content">
+								<div class="image">
+									<img src="images/AppleAir.png" alt="">
+								</div>
+								<div class="cdesc">
+									<a href="#">Apple AirPods, with Charging Case, вкладыши, белый</a>
+								</div>
+								<div class="lower">
+									<div class="price">
+										<span>14 140 ₽</span>
+										<p>12 490 ₽</p>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="fa-solid fa-chart-column"></i></a>
+										<a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide card">
+							<div class="card-content">
+								<div class="image">
+									<img src="images/Monitor.png" alt="">
+								</div>
+								<div class="cdesc">
+									<a href="#">Монитор игровой MSI Optix G241 23.8" черный</a>
+								</div>
+								<div class="lower">
+									<div class="price">
+										<span>22 820 ₽</span>
+										<p>20 120 ₽</p>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="fa-solid fa-chart-column"></i></a>
+										<a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide card">
+							<div class="card-content">
+								<div class="image">
+									<img src="images/SSD.png" alt="">
+								</div>
+								<div class="cdesc">
+									<a href="#">SSD накопитель WD Blue<br>  SN550 WDS500G2B0C 500ГБ</a>
+								</div>
+								<div class="lower">
+									<div class="price">
+										<span>10000 ₽</span>
+										<p>6500 ₽</p>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="fa-solid fa-chart-column"></i></a>
+										<a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide card">
+							<div class="card-content">
+								<div class="image">
+									<img src="images/SSD.png" alt="">
+								</div>
+								<div class="cdesc">
+									<a href="#">SSD накопитель WD Blue<br>  SN550 WDS500G2B0C 500ГБ</a>
+								</div>
+								<div class="lower">
+									<div class="price">
+										<span>10000 ₽</span>
+										<p>6500 ₽</p>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="fa-solid fa-chart-column"></i></a>
+										<a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide card">
+							<div class="card-content">
+								<div class="image">
+									<img src="images/SSD.png" alt="">
+								</div>
+								<div class="cdesc">
+									<a href="#">SSD накопитель WD Blue<br>  SN550 WDS500G2B0C 500ГБ</a>
+								</div>
+								<div class="lower">
+									<div class="price">
+										<span>10000 ₽</span>
+										<p>6500 ₽</p>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="fa-solid fa-chart-column"></i></a>
+										<a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide card">
+							<div class="card-content">
+								<div class="image">
+									<img src="images/SSD.png" alt="">
+								</div>
+								<div class="cdesc">
+									<a href="#">SSD накопитель WD Blue<br>  SN550 WDS500G2B0C 500ГБ</a>
+								</div>
+								<div class="lower">
+									<div class="price">
+										<span>10000 ₽</span>
+										<p>6500 ₽</p>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="fa-solid fa-chart-column"></i></a>
+										<a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</section>
+		</div>
+		<div class="second-desc">
+			<span><span class="red">Недавно</span> Смотрели</span>
+			<div class="desclines-main"></div>
+		</div>
+		<div class="stmain-slider">
+			<section>
+				<div class="swiper mySwiper2 container">
+					<div class="swiper-wrapper content">
+						<div class="swiper-slide card">
+							<div class="card-content">
+								<div class="image">
+									<img src="images/SSD.png" alt="">
+								</div>
+								<div class="cdesc">
+									<a href="#">SSD накопитель WD Blue SN550 WDS500G2B0C 500ГБ</a>
+								</div>
+								<div class="lower">
+									<div class="price">
+										<span></span>
+										<p>6500 ₽</p>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="fa-solid fa-chart-column"></i></a>
+										<a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide card">
+							<div class="card-content">
+								<div class="image">
+									<img src="images/mouse.png" alt="">
+								</div>
+								<div class="cdesc">
+									<a href="#">Мышь A4TECH Bloody V8, проводная, USB, черный</a>
+								</div>
+								<div class="lower">
+									<div class="price">
+										<span></span>
+										<p>1599 ₽</p>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="fa-solid fa-chart-column"></i></a>
+										<a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide card">
+							<div class="card-content">
+								<div class="image">
+									<img src="images/realme.png" alt="">
+								</div>
+								<div class="cdesc">
+									<a href="#">Смартфон REALME 9 Pro+ 5G 8/256Gb, RMX3393, черный</a>
+								</div>
+								<div class="lower">
+									<div class="price">
+										<span>45 990 ₽</span>
+										<p>34 990 ₽</p>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="fa-solid fa-chart-column"></i></a>
+										<a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide card">
+							<div class="card-content">
+								
+							</div>
+						</div>
+						<div class="swiper-slide card">
+							<div class="card-content">
+								
+							</div>
+						</div>
+						<div class="swiper-slide card">
+							<div class="card-content">
+								
+							</div>
+						</div>
+						<div class="swiper-slide card">
+							<div class="card-content">
+								
+							</div>
+						</div>
+						<div class="swiper-slide card">
+							<div class="card-content">
+								
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</section>
+		</div>
+	</div>
+	<div class="redline"></div>
+	<footer>
+		<div>
+			<div class="foot-grid">
+			<div class="company">
+				<span>Компания</span>
+				<div class="company-stuff">
+					<ul>
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Вакансии</a></li>
+						<li><a href="#">Магазины</a></li>
+						<li><a href="#">Политика Конфиденциальности</a></li>
+						<li><a href="#">Правило Продаж</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="buyers">
+				<span>Покупателям</span>
+				<div class="buyers-stuff">
+					<ul>
+						<li><a href="#">Как Оформить Заказ</a></li>
+						<li><a href="#">Способы Оплаты</a></li>
+						<li><a href="#">Кредиты</a></li>
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Статус Заказа</a></li>
+						<li><a href="#">Обмен, Возврат, Гарантия</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">Юридическим Лицам</a></li>
+						<li><a href="#">Обратная Связь</a></li>
+						<li><a href="#">Помощь</a></li>
+						<li><a href="#">Бонусная Программа</a></li>
+						<li><a href="#">Проверка Статуса Ремонта</a></li>
+						<li><a href="#">Корперативные Отделы</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="feedback">
+				<span>Оставайтесь на Связи</span>
+				<div class="feedback-stuff">
+					<span>(XXX)XXX-XX-XX (c 08:00 до 23:00)</span>
+					<span>Следите за новостями:</span>
+					<table>
+						<tr>
+						<td><a href="#"><i class="fa-brands fa-youtube"></i></a></td>
+						<td><a href="#"><i class="fa-brands fa-instagram"></i></a></td>
+						<td><a href="#"><i class="fa-brands fa-facebook"></i></a></td>
+						<td><a href="#"><i class="fa-brands fa-twitter"></i></a></td>
+						</tr>
+					</table>	
+					<span>Подпишитесь на рассылку:</span><br>
+					<span>Через личный кабинет</span>
+				</div>
+			</div>
+			</div>
+			<div class="foot-down">
+			<p>2022 © PCFoxStore - Интернет-магазин<br>
+			Уважаемые покупатели, изображения товаров на фотографиях и информация о технических характеристиках, <br>
+			указанная на сайте, могут отличаться от оригиналов и может быть изменена производителем в одностороннем порядке.<br>
+			* Указанная цена для интернет-магазина, может отличаться от цен в розничных магазинах</p>
+			</div>
+		</div>
+	</footer>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      slidesPerGroup: 1,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+      	el: ".swiper-pagination",
+      	clickable: true,
+      },
+    });
+    var swiper = new Swiper(".mySwiper2", {
+      slidesPerView: 4,
+      slidesPerGroup: 1,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+      	el: ".swiper-pagination",
+      	clickable: true,
+      },
+    });
+  </script>
+</body>
+</html>

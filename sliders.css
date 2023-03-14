@@ -1,0 +1,101 @@
+.contain {
+      max-width: 730px;
+      margin: 0 auto;
+      position: relative;
+      top: 50%;
+      transform: translate(0, -50%);
+      display: block;
+}
+.slider__contain {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .slider__items {
+      counter-reset: slide;
+    }
+
+    .slider__item {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+      counter-increment: slide;
+      height: 250px;
+      position: relative;
+    }
+
+    .slider__item::before {
+/*      content: counter(slide) "/5";*/
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      color: #fff;
+      font-style: italic;
+      font-size: 32px;
+      font-weight: bold;
+      display: block;
+    }
+
+    .slider__item:nth-child(1) {
+      background: url(img/firstnew.png) no-repeat center;
+      background-size: contain;
+    }
+
+    .slider__item:nth-child(2) {
+      background: url(img/secondnew.PNG) no-repeat center;
+      background-size: contain;
+    }
+
+    .slider__item:nth-child(3) {
+      background: url(img/banner--desktop.jpg) no-repeat center;
+      background-size: contain;
+    }
+
+    .slider__item:nth-child(4) {
+      background: url(img/slide.PNG) no-repeat center;
+      background-size: contain;
+    }
+
+    .slider__item:nth-child(5) {
+      background: url(img/slide2.PNG) no-repeat center;
+      background-size: contain;
+    }
+
+  .slider__control {
+  	background: #ff0000 !important;
+		border-radius: 50%;
+		height: 40px !important;
+    color: #000 !important;
+    font-size: 22px;
+  }
+
+.slider__control[data-slide='prev'] i {
+  margin-right: 14px;
+  pointer-events: none;
+}
+
+.slider__control[data-slide='next'] i {
+  margin-right: 14px;
+  pointer-events: none;
+}
+
+.slider__control[data-slide='prev']::before {
+  background-image: none !important;
+}
+
+.slider__control[data-slide='next']::before {
+  background-image: none !important;
+}
+.slider__control[data-slide='prev'] {
+    left: -45px !important;
+}
+
+.slider__control[data-slide='next'] {
+    right: -45px !important;
+}
+
+.slider__indicators {
+  top: 100%;
+}
+
